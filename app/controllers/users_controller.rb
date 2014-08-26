@@ -1,10 +1,13 @@
 class UsersController < ApplicationController
 
+<<<<<<< HEAD
   def index
     @users = User.all
     #@users = User.paginate(page: params[:page])
   end
 
+=======
+>>>>>>> sign-up
   def show
     @user = User.find(params[:id])
   end
@@ -22,6 +25,7 @@ class UsersController < ApplicationController
       render 'new'
     end
   end
+<<<<<<< HEAD
 
   private
 
@@ -30,3 +34,6 @@ class UsersController < ApplicationController
                                    :password_confirmation)
     end
   end
+=======
+end
+>>>>>>> sign-up
