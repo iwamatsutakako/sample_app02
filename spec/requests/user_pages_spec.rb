@@ -4,7 +4,6 @@ describe "User pages" do
 
   subject { page }
 
-<<<<<<< HEAD
   describe "index" do
     let(:user) { FactoryGirl.create(:user) }
     before(:each) do
@@ -18,9 +17,6 @@ describe "User pages" do
   end
 
 
-
-=======
->>>>>>> sign-up
   describe "profile page" do
     let(:user) { FactoryGirl.create(:user) }
     before { visit user_path(user) }
@@ -35,7 +31,6 @@ describe "User pages" do
     it { should have_content('Sign up') }
     it { should have_title(full_title('Sign up')) }
   end
-<<<<<<< HEAD
   
     describe "signup" do
 
@@ -63,6 +58,4 @@ describe "User pages" do
     end
   end
 end
-=======
-end
->>>>>>> sign-up
+
